@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
 duplicates <- function(x) {
-    return (x + x);
+    x + x
 }
 
 print(duplicates(42))

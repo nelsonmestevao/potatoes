@@ -6,3 +6,6 @@ function fact(n::Int)
    n * fact(n-1)
 end
 
+n = parse(Int, ARGS[1])
+
+println(fact(n))

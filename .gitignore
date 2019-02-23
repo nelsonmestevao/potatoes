@@ -1,7 +1,3 @@
-
-# Created by https://www.gitignore.io/api/C,C++,Java,Go,R
-# Edit at https://www.gitignore.io/?templates=C,C++,Java,Go,R
-
 ### C ###
 # Prerequisites
 *.d
@@ -152,4 +148,27 @@ vignettes/*.pdf
 # R package: bookdown caching files
 /*_files/
 
-# End of https://www.gitignore.io/api/C,C++,Java,Go,R
+### Haskell ###
+dist
+dist-*
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox/
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+*.eventlog
+.stack-work/
+cabal.project.local
+cabal.project.local~
+.HTF/
+.ghc.environment.*
+

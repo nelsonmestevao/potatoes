@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 for (let i = 1; i <= 100; i++) {
   let result = "";
 

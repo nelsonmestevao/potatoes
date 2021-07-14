@@ -3,17 +3,11 @@ defmodule FizzBuzz do
   def buzz(n), do: check(n, 5, "Buzz")
 
   defp check(number, value, output) do
-    if rem(number, value) == 0 do
-      output
-    else
-      ""
-    end
+    (rem(number, value) == 0 && output) || ""
   end
 
   def run(range) do
-    range
-    |> Enum.map(&max(fizz(&1) <> buzz(&1), "#{&1}"))
-    |> Enum.map(&IO.puts/1)
+    for n <- range, text = fizz(n) <> buzz(n), do: IO.puts(max(text, "#{n}"))
   end
 end
 
